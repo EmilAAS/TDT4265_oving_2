@@ -12,9 +12,9 @@ def pre_process_images(X: np.ndarray):
     Returns:
         X: images of shape [batch size, 785] normalized as described in task2a
     """
-    assert X.shape[1] == 785, f"X.shape[1]: {X.shape[1]}, should be 784"
+    assert X.shape[1] == 784, f"X.shape[1]: {X.shape[1]}, should be 784"
     # TODO implement this function (Task 2a)
-    return X
+    return X ## emil har vært her
 
 
 def cross_entropy_loss(targets: np.ndarray, outputs: np.ndarray):
