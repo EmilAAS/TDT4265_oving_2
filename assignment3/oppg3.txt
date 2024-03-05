@@ -1,0 +1,53 @@
+endret til 64 filter på første conv
+Dataset: train, Accuracy: 0.8006312233285917, loss: 0.5871224999427795
+Dataset: test, Accuracy: 0.7127786624203821, loss: 0.832453727722168
+Dataset: val, Accuracy: 0.7177610759493671, loss: 0.8074034452438354
+
+med dropout:
+Dataset: train, Accuracy: 0.8001200213371266, loss: 0.5736052393913269
+Dataset: test, Accuracy: 0.7234275477707006, loss: 0.8013546466827393
+Dataset: val, Accuracy: 0.7223101265822784, loss: 0.7819715142250061
+
+endret tilbake til 32 på første conv
+Dataset: train, Accuracy: 0.7574679943100996, loss: 0.6923977136611938
+Dataset: test, Accuracy: 0.6983479299363057, loss: 0.8833590149879456
+Dataset: val, Accuracy: 0.7041139240506329, loss: 0.8545536398887634
+
+64 på alle layers
+Dataset: train, Accuracy: 0.7879400782361309, loss: 0.5969828367233276
+Dataset: test, Accuracy: 0.7117834394904459, loss: 0.8480179309844971
+Dataset: val, Accuracy: 0.7266613924050633, loss: 0.802112877368927
+
+endret padding og kernel=3 på siste conv
+Dataset: train, Accuracy: 0.7755378733997155, loss: 0.6371364593505859
+Dataset: test, Accuracy: 0.7192476114649682, loss: 0.8256561160087585
+Dataset: val, Accuracy: 0.7189477848101266, loss: 0.8009646534919739
+
+kernel=7 på siste conv
+Dataset: train, Accuracy: 0.8011201991465149, loss: 0.5638548135757446
+Dataset: test, Accuracy: 0.7209394904458599, loss: 0.8296589851379395
+Dataset: val, Accuracy: 0.7207278481012658, loss: 0.812602698802948
+
+kernel=7 på andre conv
+Dataset: train, Accuracy: 0.7930076458036984, loss: 0.5904881954193115
+Dataset: test, Accuracy: 0.7254179936305732, loss: 0.8279489874839783
+Dataset: val, Accuracy: 0.724881329113924, loss: 0.814324676990509
+
+kernel=7 på første conv
+Dataset: train, Accuracy: 0.7830058677098151, loss: 0.623555600643158
+Dataset: test, Accuracy: 0.7090963375796179, loss: 0.869431734085083
+Dataset: val, Accuracy: 0.7171677215189873, loss: 0.8100008368492126
+
+ker=3,9,7
+Dataset: train, Accuracy: 0.8014758179231863, loss: 0.5640273690223694
+Dataset: test, Accuracy: 0.7210390127388535, loss: 0.8222996592521667
+Dataset: val, Accuracy: 0.7244857594936709, loss: 0.7935132384300232
+
+
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+
+~/miniconda3/bin/conda init bash
+~/miniconda3/bin/conda init zsh
